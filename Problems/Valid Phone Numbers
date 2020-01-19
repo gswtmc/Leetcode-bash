@@ -6,3 +6,7 @@
 
 # You may also assume each line in the text file must not contain leading or trailing white spaces.
 
+awk '/^\([0-9]{3}\) [0-9]{3}-[0-9]{4}$|^[0-9]{3}-[0-9]{3}-[0-9]{4}$/' file.txt
+
+#Alternative
+egrep ^'(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}'$ file.txt
